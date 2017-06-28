@@ -3,9 +3,8 @@
 ##############################################################################
 # See the README for details on ways to supply these values
 provider "ibmcloud" {
-  ibmid                    = "${var.ibmid}"
-  ibmid_password           = "${var.ibmidpw}"
-  softlayer_account_number = "${var.slaccountnum}"
+  softlayer_username           = "${var.softlayer_username}"
+  softlayer_api_key = "${var.softlayer_api_key}"
 }
 
 ##############################################################################
@@ -27,12 +26,12 @@ variable ibmid {
   description = "Your IBM-ID."
 }
 # Required for the IBM Cloud provider
-variable ibmidpw {
+variable softlayer_api_key {
   type = "string"
   description = "The password for your IBM-ID."
 }
 # Required to target the correct SL account
-variable slaccountnum {
+variable softlayer_api_key {
   type = "string"
   description = "Your Softlayer account number."
 }
