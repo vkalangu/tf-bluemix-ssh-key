@@ -21,9 +21,9 @@ resource "ibmcloud_infra_ssh_key" "ssh_key" {
 # Variables
 ##############################################################################
 # Required for the IBM Cloud provider
-variable ibmid {
+variable softlayer_username {
   type = "string"
-  description = "Your IBM-ID."
+  description = "The SL username"
 }
 # Required for the IBM Cloud provider
 variable softlayer_api_key {
