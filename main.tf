@@ -30,11 +30,7 @@ variable softlayer_api_key {
   type = "string"
   description = "The password for your IBM-ID."
 }
-# Required to target the correct SL account
-variable softlayer_api_key {
-  type = "string"
-  description = "Your Softlayer account number."
-}
+
 variable datacenter {
   description = "The datacenter to create resources in."
 }
