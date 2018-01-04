@@ -2,7 +2,7 @@
 # IBM Cloud Provider
 ##############################################################################
 # See the README for details on ways to supply these values
-provider "ibmcloud" {
+provider "ibm" {
   softlayer_username           = "${var.softlayer_username}"
   softlayer_api_key = "${var.softlayer_api_key}"
 }
