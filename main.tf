@@ -10,7 +10,7 @@ provider "ibm" {
 ##############################################################################
 # IBM SSH Key: For connecting to VMs
 ##############################################################################
-resource "ibmcloud_infra_ssh_key" "ssh_key" {
+resource "compute_ssh_key" "ssh_key" {
   label = "${var.key_label}"
   notes = "${var.key_note}"
   # Public key, so this is completely safe
@@ -48,5 +48,5 @@ variable key_note {
 # Outputs
 ##############################################################################
 output "ssh_key_id" {
-  value = "${ibmcloud_infra_ssh_key.ssh_key.id}"
+  value = "${ibm_compute_ssh_key.ssh_key.id}"
 }
