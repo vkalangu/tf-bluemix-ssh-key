@@ -10,7 +10,7 @@ provider "ibm" {
 ##############################################################################
 # IBM SSH Key: For connecting to VMs
 ##############################################################################
-resource "compute_ssh_key" "ssh_key" {
+resource "ibm_compute_ssh_key" "ssh_key" {
   label = "${var.key_label}"
   notes = "${var.key_note}"
   # Public key, so this is completely safe
